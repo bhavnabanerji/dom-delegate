@@ -1,11 +1,13 @@
 (function (window) {
   function delegate(containerId) {
+    // get dom node
     if(typeof(containerId) === 'string') {
       this.container  = document.querySelector(containerId);
     } else {
       this.container = containerId;
     } 
     if(this === window) {
+      // Create an instance
       return new delegate(containerId);
     }
     return this;
