@@ -1,6 +1,6 @@
 (function (window) {
   function delegate(containerId) {
-    // get dom node
+    // get dom node.
     if(typeof(containerId) === 'string') {
       this.container  = document.querySelector(containerId);
     } else {
